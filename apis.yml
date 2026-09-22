@@ -1,23 +1,60 @@
 aid: aizenglobal
+
 name: Aizenglobal
-description: 'Aizenglobal is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Aizenglobal is a fintech company based in Asia that leverages artificial intelligence to provide innovative digital banking, credit financing, and ESG‑focused financial services. Their platform offers AI‑driven credit assessment, multi‑modeling tools, and embedded banking solutions for enterprises and consumers, aiming to drive sustainable finance and data‑centric innovation across the region.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aizenglobal/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-22'
+
 modified: '2026-09-22'
+
 tags:
 - Company
-apis: []
+- Fintech
+- AI
+- DigitalBanking
+- ESG
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: GitHubOrganization
+  url: https://github.com/AizenGlobal
+- type: DomainSecurity
+  url: security/aizenglobal-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/aizenglobal
+  url: https://aizenglobal.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: "OpenAPI endpoints returned 403 or were unreachable, and no documentation host is present."
+  evidence:
+    - url: https://api.aizenglobal.com/openapi.json
+      status: error
+    - url: https://aizenglobal.com/openapi.json
+      status: 403
+  checked: 2026-09-22
+x-enrichment:
+  date: '2026-09-22'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
