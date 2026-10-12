@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/aizenglobal/integrations
+- https://n8n.io/integrations/aizenglobal/
+- https://composio.dev/toolkits/aizenglobal
+- https://monid.ai/tools/aizenglobal
+checked:
+- https://composio.dev/toolkits/aizenglobal
+- https://monid.ai/tools/aizenglobal
+- https://n8n.io/integrations/aizenglobal/
+- https://zapier.com/apps/aizenglobal/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
